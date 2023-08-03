@@ -9,23 +9,24 @@
 }
 
 .containerheader{
-    max-width: 90rem;
+    max-width: 75rem;
     margin: 0 auto;
-    padding: .5rem;                                                                                                                                                                                        
+    padding: .1rem;                                                                                                                                                                                        
 }
 
 @layer components{
     .header{
-        @apply bg-gurey
+        @apply bg-gurey w-full h-[3.2rem]
+    }
+    .header .header__wrapper{
+    @apply h-[3rem] w-full flex justify-between items-center lg:p-[1.2rem] 
+
     }
     .header .header__wrapper img{
         @apply lg:h-[2rem]
     }
     .header .header__wrapper span{
         @apply lg:w-[14rem]
-    }
-    .header .header__wrapper{
-        @apply h-[3rem] w-full flex justify-between items-center lg:p-[2rem] 
     }
     .header .header__nav{
         @apply lg:flex lg:static bg-transparent lg:justify-between 
@@ -42,7 +43,17 @@
     .header #burgerbtn{
         @apply lg:hidden
     }
+    .header .dbtn{
+        @apply right-0 hidden lg:flex
+    }
+   
+    .header #burgerbtn{
+        @apply  text-white text-[1.5rem] p-[.3rem] px-[.6rem] hover:bg-asul hover:rounded-md
+    }
     
+    
+
+
    
 }
 
