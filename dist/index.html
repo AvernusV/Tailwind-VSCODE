@@ -10,27 +10,40 @@
 </head>
 <body>
     <header class="header w-full">
-        <div class=" bg-gurey h-[3rem] w-full p-[1rem] flex justify-between items-center ">
-        <a class="flex p-[.5rem] pl-" href=""><img class="max-w-[2rem] " src="../img/download.png" alt=""><span class="text-2xl text-white pl-[1rem]">Visual Studio Code</span></a>
+     <div class="containerheader">
+        <div class="header__wrapper">
+            <a class="VScode flex" href=""><img class="max-w-[2rem] " src="../img/download.png" alt=""><span class="text-2xl text-white pl-[1rem]">Visual Studio Code</span></a>
+            <div class="header__nav absolute bg-gurey top-[4rem] w-full left-0 overflow-hidden h-[0rem] ease-in duration-200 lg:overflow-visible lg:h-fit ">
+                    <ul class="nav overflow-hidden">
+                    <li class="text-white px-[.5rem]"><a class="text-[1rem] font-[400]" href="">Docs</a></li>
+                    <li class="text-white px-[.5rem]"><a class="text-[1rem] font-[400]" href="">Updates</a></li>
+                    <li class="text-white px-[.5rem]"><a class="text-[1rem] font-[400]" href="">Blog</a></li>
+                    <li class="text-white px-[.5rem]"><a class="text-[1rem] font-[400]" href="">API</a></li>
+                    <li class="text-white px-[.5rem]"><a class="text-[1rem] font-[400]" href="">Extensions</a></li>
+                    <li class="text-white px-[.5rem]"><a class="text-[1rem] font-[400]" href="">FAQ</a></li>
+                    <li class="text-white px-[.5rem]"><a class="text-[1rem] font-[400]" href="">Learn</a></li>
+                    <li id="search" class="text-white p-[.5rem]"><a class="text-[1rem] font-[400]" href="">Search</a></li>
+                    <div id="download" class="btn font-bold bg-asul p-[1rem]  text-white "><i class="fa-solid fa-arrow-down-long"></i><a href="">Download</a></div>
+                    </ul>
+                <div class="desktopbtn right-0 flex">
+                    <div class="relative"><i class="fa-solid fa-magnifying-glass absolute pt-[2rem]"></i><input class="searchbtn p-[1rem] bg" type="text" id="Name" name="Name" placeholder="Search Docs"></div>
+                    <div id="downloadbtn" class="btn font-bold bg-asul p-[1rem]  text-white "><i class="fa-solid fa-arrow-down-long"></i><a href="">Download</a></div>
+                </div>
+            </div>
             <div class="header__menu">
-                <i class="fa-solid fa-bars text-white text-[1.5rem] p-[.3rem] px-[.6rem] hover:bg-asul hover:rounded-md"></i>
+                <i id="burgerbtn" class="fa-solid fa-bars text-white text-[1.5rem] p-[.3rem] px-[.6rem] hover:bg-asul hover:rounded-md"></i>
+            </div>
+         </div>
+        </div>
+    </header>
+
+    <section class="version">
+        <div class="contianer">
+            <div class="version__text grid justify-center">
+                <a class="btnver text-asul text underline" >Version 1.80</a> is now available! Read about the new features and fixes from June.
             </div>
         </div>
-        <div class="header__nav bg-gurey w-full left-0 overflow-hidden h-[0rem]">
-            <img src="./Dist/img/vector9.svg" alt="">
-            <ul class="nav overflow-hidden">
-              <li class="text-white p-[.5rem]"><a class="text-[1rem] font-[400]" href="">Docs</a></li>
-              <li class="text-white p-[.5rem]"><a class="text-[1rem] font-[400]" href="">Updates</a></li>
-              <li class="text-white p-[.5rem]"><a class="text-[1rem] font-[400]" href="">Blog</a></li>
-              <li class="text-white p-[.5rem]"><a class="text-[1rem] font-[400]" href="">API</a></li>
-              <li class="text-white p-[.5rem]"><a class="text-[1rem] font-[400]" href="">Extensions</a></li>
-              <li class="text-white p-[.5rem]"><a class="text-[1rem] font-[400]" href="">FAQ</a></li>
-              <li class="text-white p-[.5rem]"><a class="text-[1rem] font-[400]" href="">Learn</a></li>
-              <li class="text-white p-[.5rem]"><a class="text-[1rem] font-[400]" href="">Search</a></li>
-              <div class="btn font-bold bg-asul p-[1rem]  text-white "><i class="fa-solid fa-arrow-down-long"></i><a href="">Download</a></div>
-            </ul>
-          </div>
-    </header>
+    </section>
     <script src="./js/script.js"></script>
 </body>
 </html>

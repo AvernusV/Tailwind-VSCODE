@@ -3,7 +3,46 @@
 @tailwind utilities;
 
 .container{
-    max-width: 30rem;
+    max-width: 90rem;
     margin: 0 auto;
     padding: 1.5rem;                                                                                                                                                                                        
 }
+
+.containerheader{
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: .5rem;                                                                                                                                                                                        
+}
+
+@layer components{
+    .header{
+        @apply bg-gurey
+    }
+    .header .header__wrapper img{
+        @apply lg:h-[2rem]
+    }
+    .header .header__wrapper span{
+        @apply lg:w-[14rem]
+    }
+    .header .header__wrapper{
+        @apply h-[3rem] w-full flex justify-between items-center lg:p-[2rem] 
+    }
+    .header .header__nav{
+        @apply lg:flex lg:static bg-transparent lg:justify-between 
+    }
+    .header .header__nav ul{
+        @apply lg:flex
+    }
+    .header .header__nav #search{
+        @apply lg:hidden
+    }
+    .header .header__nav #download{
+        @apply lg:hidden 
+    }
+    .header #burgerbtn{
+        @apply lg:hidden
+    }
+    
+   
+}
+
